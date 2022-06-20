@@ -74,7 +74,7 @@
 
 
 
-let animals = ["Lion", "Tiger", "Pig"]
+// let animals = ["Lion", "Tiger", "Pig"]
 
 // // iterate over the array with for...of
 // for (let animal of animals) {
