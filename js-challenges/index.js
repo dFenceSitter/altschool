@@ -63,7 +63,7 @@ const time = new Date()
 
 
 //-------------SEASON CHECKER CHALLENGE-------------
-let enterMonth = prompt('Enter a month:')
+// let enterMonth = prompt('Enter a month:')
 
 // if(enterMonth == 'September' || enterMonth == 'October' || enterMonth == 'November'){
 //     console.log(`Since the month is ${enterMonth}, the season is Autumn`)
@@ -75,12 +75,12 @@ let enterMonth = prompt('Enter a month:')
 //     console.log(`Since the month is ${enterMonth}, the season is Summer`)
 // }
 
-const month = {
-    spring: ['March', 'April', 'May'],
-    autumn: ['September', 'October', 'November'],
-    winter: ['December', 'January', 'Febuary'],
-    summer: ['June', 'July', 'August']
-}
+// const month = {
+//     spring: ['March', 'April', 'May'],
+//     autumn: ['September', 'October', 'November'],
+//     winter: ['December', 'January', 'Febuary'],
+//     summer: ['June', 'July', 'August']
+// }
 
 // if(Object.values(month.spring).includes(enterMonth)) {
 //     console.log(`Since the month is ${enterMonth}, the season is spring`)
@@ -98,15 +98,6 @@ const month = {
 //     }
 // });
 
-if(Object.values(month).includes(enterMonth)) {
-Object.values(month).forEach(element => {
-    
-        for(let i in element) {
-            console.log(`${enterMonth} is${Object.keys(month(element[i]))}`)
-        }
-  
-})
-}
 
 
 
@@ -128,3 +119,26 @@ Object.values(month).forEach(element => {
 // } else if (Object.values(weekDays.weekends).includes(day)) {
 //     console.log(`${day} is a weekend`)
 // }
+
+
+// const cars = ['Honda', 'Ferarri', 'Mercedes', 'Lamboghini', 'Audi', 'Maserati', 'Volskwagon']
+// let checkCar = prompt('Enter a car:')
+
+
+// cars.indexOf(checkCar) !== -1 ? console.log('The car is present') : cars.push(checkCar)
+// console.log(cars)
+
+// console.log(cars.join(', '))
+// console.log(cars.slice(2,6))
+// cars.splice(2, 3, 'Ford', 'Civic', 'Infiniti')
+// cars.shift()
+// console.log(cars)
+
+// const letter = ['apple', 'carton', 'zebra', 'ball', 'deal']
+// letter.sort()
+// console.log(letter)
+
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+let ageMedian = ages.slice(4,6)
+let median =  ageMedian.reduce((a, b) => a + b, 0) / ages.length
+console.log(median)
